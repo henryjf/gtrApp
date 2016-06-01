@@ -4,4 +4,4 @@ import './app.core/index';
 import './app.user/index';
 
 angular
-  .module('app', [])
+  .module('app', ['app.core', 'app.user']);
