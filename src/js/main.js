@@ -1,5 +1,7 @@
 import angular from 'angular';
-import 'angular-ui-router';
+
+import './app.core/index';
+import './app.user/index';
 
 angular
   .module('app', [])
