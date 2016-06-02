@@ -1,7 +1,7 @@
 function config ($stateProvider, $urlRouterProvider, BackandProvider) {
 
   BackandProvider
-  .setSignUpToken ('9be1c631-2862-494f-b13c-a015e64dba58')
+  .setSignUpToken ('4589146e-f5b8-4a83-a04d-36f602214779')
   .setAppName('gtrapp')
   ;
 
