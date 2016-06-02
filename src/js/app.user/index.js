@@ -8,5 +8,5 @@ angular
   .module('app.user', [])
   .controller('RegisterController', RegisterController)
   .controller('LoginController', LoginController)
-  .service('UserService', UserService);
+  .service   ('UserService', UserService);
 ;
