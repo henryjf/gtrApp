@@ -24,7 +24,10 @@ function UserService (Backand) {
   }
 
   function login(user) {
-    
+    return Backand.signin(
+      user.username,
+      user.password
+    );
   }
 
 
