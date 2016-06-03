@@ -6,12 +6,15 @@ function RegisterController (UserService) {
 
   function registerUser (user) {
     UserService.register(user).then( (res)=> {
-      console.log(res);
-    })
-
+      let user = {
+        name: res.fullName,
+        id: res.userId,
+        email: res.userName
+      };
+      $cookies.putObject('user', user);
+    });
   }
 
 }
-
 RegisterController.$inject = ['UserService'];
 export { RegisterController };

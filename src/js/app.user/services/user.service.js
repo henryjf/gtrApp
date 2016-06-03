@@ -1,17 +1,9 @@
-function UserService (Backand) {
+function UserService (Backand, $cookies, $state) {
 
-  this.register = register;
-  this.login = login;
-  // this.authenticate = anuthenticate;
-  // this.logOut = logOut;
-
-
-  // function logOut() {
-  //   Backand.signout();
-  //   $cookies.remove('name');
-  //   $cookies.remove('token');
-  //   $cookies.remove('useId');
-  // }
+  this.register  = register;
+  this.login     = login;
+  this.checkAuth = checkAuth;
+  this.logout    = logout;
 
   function register (user) {
     return Backand.signup(
@@ -30,8 +22,24 @@ function UserService (Backand) {
     );
   }
 
+  function logout() {
+    $cookies.remove('user');
+    Backand.signout();
+    $state.go('root.login');
+  }
+
+  function checkAuth(currentState){
+    let user = $cookies.getObject('user');
+    if (user) {
+      console.log('user is logged in');
+    } else if (currentState === 'root.login' || currentState ==='root.register') {
+      console.log('already on a login/register page');
+    } else { console.log('...redirecting to login page');
+    }
+  }
+
 
 }
 
-UserService.$inject = ['Backand'];
+UserService.$inject = ['Backand', '$cookies', '$state'];
 export { UserService };
