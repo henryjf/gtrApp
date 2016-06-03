@@ -1,4 +1,4 @@
-function RegisterController (UserService) {
+function RegisterController (UserService,$cookies, $state) {
 
   let vm = this;
 
@@ -12,9 +12,10 @@ function RegisterController (UserService) {
         email: res.userName
       };
       $cookies.putObject('user', user);
+      $state.go('root.home')
     });
   }
 
 }
-RegisterController.$inject = ['UserService'];
+RegisterController.$inject = ['UserService', '$cookies', '$state'];
 export { RegisterController };
