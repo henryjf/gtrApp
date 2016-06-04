@@ -1,4 +1,11 @@
-<h3>Home Page</h3>
+<h3>The Guitar Closet</h3>
 
 <p>
   This page is ONLY visible when you are logged in.</p>
+
+  <p ng-repeat ="guitar in vm.myGuitars">
+    {{guitar.brand}}/
+    {{guitar.model}}/
+    {{guitar.date}}/
+    {{guitar.finish}}
+  </p>

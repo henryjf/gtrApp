@@ -7,10 +7,12 @@ import { config } from './config';
 import { run } from './run';
 
 import { NavController } from './controllers/nav.controller';
+import { HomeController } from './controllers/home.controller';
 
 angular
   .module('app.core', ['ui.router', 'ngCookies', 'backand'])
   .config(config)
   .run(run)
   .controller('NavController', NavController)
+  .controller('HomeController', HomeController)
   ;
