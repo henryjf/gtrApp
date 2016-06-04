@@ -16,6 +16,7 @@ function config ($stateProvider, $urlRouterProvider, BackandProvider) {
     .state('root.home', {
       url: '/',
       templateUrl: 'templates/home.tpl.html',
+      controller: 'HomeController as vm'
     })
     .state('root.register', {
       url: '/register',
@@ -26,6 +27,11 @@ function config ($stateProvider, $urlRouterProvider, BackandProvider) {
       url: '/login',
       templateUrl: 'templates/login.tpl.html',
       controller: 'LoginController as vm'
+    })
+    .state('root.addGuitars', {
+      url: '/addGuitars',
+      templateUrl: 'templates/addGuitars.tpl.html',
+      controller: 'AddGuitarController as vm'
     });
 
 }

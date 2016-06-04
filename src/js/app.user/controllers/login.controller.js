@@ -10,7 +10,8 @@ function LoginController (UserService, $cookies, $state) {
       let user = {
         name: res.fullName,
         id: res.userId,
-        email: res.userName
+        email: res.userName,
+        token: res.access_token
       };
       $cookies.putObject('user', user);
       $state.go('root.home')
