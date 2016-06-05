@@ -22,11 +22,9 @@ function GuitarService($http, $cookies) {
     return $http.post(url, guitar);
   }
 
-
-
 }
 
-GuitarService.$inject = ['$http', '$cookies']
+GuitarService.$inject = ['$http', '$cookies'];
 
 // GuitarService.$inject = ['SERVER', '$http', '$cookies'];
 export { GuitarService };
