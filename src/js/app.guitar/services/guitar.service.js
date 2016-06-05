@@ -1,6 +1,7 @@
-function GuitarService(SERVER, $http, $cookies) {
+function GuitarService($http, $cookies) {
 
-  const url = SERVER.URL + 'guitars/';
+  let url = 'https://api.backand.com/1/objects/guitars';
+  // const url = SERVER.URL + 'guitars/';
 
   this.add = add;
   this.getMyGuitar = getMyGuitar;
@@ -25,5 +26,7 @@ function GuitarService(SERVER, $http, $cookies) {
 
 }
 
-GuitarService.$inject = ['SERVER', '$http', '$cookies'];
+GuitarService.$inject = ['$http', '$cookies']
+
+// GuitarService.$inject = ['SERVER', '$http', '$cookies'];
 export { GuitarService };
