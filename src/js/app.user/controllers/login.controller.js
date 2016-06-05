@@ -5,12 +5,12 @@ function LoginController (UserService, $cookies, $state) {
   vm.loginUser = loginUser;
 
   function loginUser (user) {
-    UserService.login(user).then( (res)=> {
+    UserService.login(user).then( (res) => {
 
       let user = {
         name: res.fullName,
         id: res.userId,
-        email: res.userName,
+        email: res.username,
         token: res.access_token
       };
       $cookies.putObject('user', user);

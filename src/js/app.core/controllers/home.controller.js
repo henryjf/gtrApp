@@ -5,8 +5,8 @@ function HomeController(GuitarService) {
   init();
 
   function init() {
-    GuitarService.getMyGuitars().then( (res) => {
-      vm.myGuitars = res.data.data;
+    GuitarService.getMyGuitar().then( (res) => {
+      vm.myGuitar = res.data.data;
       console.log(res);
     })
   }

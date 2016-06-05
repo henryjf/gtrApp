@@ -28,9 +28,9 @@ function config ($stateProvider, $urlRouterProvider, BackandProvider) {
       templateUrl: 'templates/login.tpl.html',
       controller: 'LoginController as vm'
     })
-    .state('root.addGuitars', {
-      url: '/addGuitars',
-      templateUrl: 'templates/addGuitars.tpl.html',
+    .state('root.addguitar', {
+      url: '/add-guitar',
+      templateUrl: 'templates/addguitar.tpl.html',
       controller: 'AddGuitarController as vm'
     });
 

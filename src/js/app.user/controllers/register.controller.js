@@ -9,7 +9,7 @@ function RegisterController (UserService, $cookies, $state) {
       let user = {
         name: res.fullName,
         id: res.userId,
-        email: res.userName,
+        email: res.username,
         token: res.access_token
       };
       $cookies.putObject('user', user);

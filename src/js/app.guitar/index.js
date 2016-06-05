@@ -4,7 +4,6 @@ import { AddGuitarController } from './controllers/addguitar.controller';
 import { GuitarService } from './services/guitar.service';
 
 angular
-  .module('app.guitars', [])
+  .module('app.guitar', [])
   .controller('AddGuitarController', AddGuitarController)
   .service('GuitarService', GuitarService);
-  
