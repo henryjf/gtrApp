@@ -1,6 +1,6 @@
 function ListController (GuitarService, $cookies) {
 
-  let vm = this
+  let vm = this;
 
   init();
 
@@ -8,7 +8,7 @@ function ListController (GuitarService, $cookies) {
 
       let userId = $cookies.get('userId');
 
-      GuitarService.getMyGuitars(userId.then)( (res) => {
+      GuitarService.getMyGuitars(userId).then( (res) => {
       vm.allGuitars = res.data.data;
 
       console.log(res);

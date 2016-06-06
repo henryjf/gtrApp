@@ -1,13 +1,18 @@
-function AddGuitarController(GuitarService) {
+function AddGuitarController(GuitarService, $state) {
 
   let vm = this;
 
   vm.addGuitar = addGuitar;
 
   function addGuitar (guitar) {
-    GuitarService.add(guitar);
+    GuitarService.add(guitar).then( (res) => {
+
+      $state.go('root.list')
+
+    });
   }
+
 }
 
-AddGuitarController.$inject = ['GuitarService'];
+AddGuitarController.$inject = ['GuitarService', '$state'];
 export { AddGuitarController};

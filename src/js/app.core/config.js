@@ -32,6 +32,11 @@ function config ($stateProvider, $urlRouterProvider, BackandProvider) {
       url: '/add-guitar',
       templateUrl: 'templates/addguitar.tpl.html',
       controller: 'AddGuitarController as vm'
+    })
+    .state('root.list', {
+      url: '/list',
+      templateUrl: 'templates/list.tpl.html',
+      controller: 'ListController as vm'
     });
 
 }

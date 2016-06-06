@@ -4,9 +4,9 @@ function GuitarService($http, $cookies, SERVER) {
   const url = SERVER.URL + 'guitars';
 
   this.add = add;
-  this.getMyGuitar = getMyGuitar;
+  this.getMyGuitars = getMyGuitars;
 
-  function getMyGuitar () {
+  function getMyGuitars () {
     let user = $cookies.getObject('user');
 
     let myURL = SERVER.URL + 'users/' + user.id + '/guitars';
@@ -27,6 +27,4 @@ function GuitarService($http, $cookies, SERVER) {
 }
 
 GuitarService.$inject = ['$http', '$cookies','SERVER'];
-
-// GuitarService.$inject = ['SERVER', '$http', '$cookies'];
 export { GuitarService };

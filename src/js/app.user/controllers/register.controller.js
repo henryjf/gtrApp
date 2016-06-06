@@ -13,7 +13,7 @@ function RegisterController (UserService, $cookies, $state) {
         token: res.access_token
       };
       $cookies.putObject('user', user);
-      $state.go('root.home')
+      $state.go('root.list')
     });
   }
 
