@@ -1,7 +1,7 @@
-function GuitarService($http, $cookies) {
+function GuitarService($http, $cookies, SERVER) {
 
-  let url = 'https://api.backand.com/1/objects/guitars';
-  // const url = SERVER.URL + 'guitars/';
+  // let url = 'https://api.backand.com/1/objects/guitars';
+  const url = SERVER + 'guitars';
 
   this.add = add;
   this.getMyGuitar = getMyGuitar;
@@ -9,7 +9,9 @@ function GuitarService($http, $cookies) {
   function getMyGuitar () {
     let user = $cookies.getObject('user');
 
-    let myURL = 'https://api.backand.com/1/objects/users' + user.id + '/guitars';
+    let myURL = SERVER.URL + 'users/' + user.id + '/guitars';
+
+    // let myURL = 'https://api.backand.com/1/objects/users/' + user.id + '/guitars';
 
     return $http.get(myURL);
   }
@@ -24,7 +26,7 @@ function GuitarService($http, $cookies) {
 
 }
 
-GuitarService.$inject = ['$http', '$cookies'];
+GuitarService.$inject = ['$http', '$cookies','SERVER'];
 
 // GuitarService.$inject = ['SERVER', '$http', '$cookies'];
 export { GuitarService };
