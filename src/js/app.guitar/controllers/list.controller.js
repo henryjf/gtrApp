@@ -1,18 +1,19 @@
-function ListController ($http, SERVER) {
+function ListController (GuitarService, $cookies) {
 
   let vm = this
 
   init();
 
   function init() {
-    $http.get(SERVER.then ( (res) => {
-      vm.allGuitars = res.data;
+
+      let userId = $cookies.get('userId');
+
+      GuitarService.getMyGuitars(userId.then)( (res) => {
+      vm.allGuitars = res.data.data;
     });
   }
 
-
-
 }
 
-ListController.$inject = ['$http', 'SERVER'];
+ListController.$inject = ['GuitarService', '$cookies'];
 export { ListController };
