@@ -39,7 +39,7 @@ function config ($stateProvider, $urlRouterProvider, BackandProvider) {
       controller: 'ListController as vm'
     })
     .state('root.detail', {
-      url: '/detail',
+      url: '/detail/:guitarId',
       templateUrl: 'templates/detail.tpl.html',
       controller: 'DetailController as vm'
     });

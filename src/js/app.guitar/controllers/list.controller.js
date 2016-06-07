@@ -1,4 +1,4 @@
-function ListController (GuitarService, $cookies) {
+function ListController (GuitarService, $cookies, $state) {
 
   let vm = this;
 
@@ -10,6 +10,7 @@ function ListController (GuitarService, $cookies) {
 
       GuitarService.getMyGuitars(userId).then( (res) => {
       vm.allGuitars = res.data.data;
+      // $state.go('root.detail')
 
       // console.log(res.data.data);
     });
@@ -17,5 +18,5 @@ function ListController (GuitarService, $cookies) {
 
 }
 
-ListController.$inject = ['GuitarService', '$cookies'];
+ListController.$inject = ['GuitarService', '$cookies', '$state'];
 export { ListController };

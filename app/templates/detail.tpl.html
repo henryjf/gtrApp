@@ -1,1 +1,17 @@
-<h3>Details Page</h3>
+<h3>Detail Page</h3>
+
+<div class="card is-fullwidth">
+
+    <img class="detail" ng-src="{{ vm.detailGuitar.imageUrl }}">
+
+    <div class="card-content">
+    <div class="content">{{ vm.detailGuitar.make }}</div>
+    <div class="content">{{ vm.detailGuitar.model }}</div>
+    <div class="content">{{ vm.detailGuitar.date }}</div>
+    <div class="content">{{ vm.detailGuitar.finish }}</div>
+  </div>
+
+  <footer class="card-footer">
+    <a class="card-footer-item" ng-click="deleteGuitar(detailGuitar.guitarId)">Delete</a>
+  </footer>
+</div>
