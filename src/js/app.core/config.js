@@ -37,6 +37,11 @@ function config ($stateProvider, $urlRouterProvider, BackandProvider) {
       url: '/list',
       templateUrl: 'templates/list.tpl.html',
       controller: 'ListController as vm'
+    })
+    .state('root.detail', {
+      url: '/detail',
+      templateUrl: 'templates/detail.tpl.html',
+      controller: 'DetailController as vm'
     });
 
 }

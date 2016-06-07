@@ -11,7 +11,7 @@ function ListController (GuitarService, $cookies) {
       GuitarService.getMyGuitars(userId).then( (res) => {
       vm.allGuitars = res.data.data;
 
-      console.log(res);
+      // console.log(res.data.data);
     });
   }
 
