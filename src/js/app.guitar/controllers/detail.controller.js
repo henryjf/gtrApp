@@ -9,7 +9,7 @@ function DetailController($http, SERVER, $stateParams, $state) {
   function init() {
     console.log($stateParams);
     $http.get(SERVER.URL + 'guitars/' + $stateParams.guitarId).then ( (res) => {
-      console.log(res);
+      // console.log(res);
       vm.detailGuitar = res.data;
     });
   }

@@ -11,12 +11,12 @@ function GuitarService($http, $cookies, SERVER) {
     let myURL = SERVER.URL + 'users/' + user.id + '/guitars';
 
     return $http.get(myURL);
-  }
+  };
 
   function getAllGuitars () {
     return $http.get(url);
-    console.log($http.get(url));
-  }
+    // console.log($http.get(url));
+  };
 
 
   function add(guitar) {
@@ -24,7 +24,7 @@ function GuitarService($http, $cookies, SERVER) {
     guitar.user = user.id;
 
     return $http.post(url, guitar);
-  }
+  };
 
 }
 
