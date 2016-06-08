@@ -15,8 +15,7 @@ function DetailController($http, SERVER, $stateParams, $state) {
   }
 
   function deleteGuitar (guitarId) {
-    $http.delete(SERVER.URL  + 'guitars/'+ guitarId).then(
-      (res) => {
+    $http.delete(SERVER.URL  + 'guitars/' + guitarId).then( (res) => {
         $state.go('root.list')
       });
   }

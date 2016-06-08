@@ -1,4 +1,4 @@
-function HomeController(GuitarService) {
+function HomeController(GuitarService, $cookies) {
 
   let vm = this;
 
@@ -7,10 +7,18 @@ function HomeController(GuitarService) {
   function init() {
     GuitarService.getMyGuitars().then( (res) => {
       vm.myGuitar = res.data.data;
-      // console.log(res);
-    })
+
+      let userId = $cookies.get('userId');
+
+
+      GuitarService.getAllGuitars().then( (res) => {
+      vm.allGuitars = res.data.data;
+      console.log(res);
+    });
+
+    });
   }
 }
 
-HomeController.$inject = ['GuitarService'];
+HomeController.$inject = ['GuitarService', '$cookies'];
 export { HomeController };
