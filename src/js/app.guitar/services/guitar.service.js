@@ -26,7 +26,25 @@ function GuitarService($http, $cookies, SERVER) {
     return $http.post(url, guitar);
   };
 
+
+  // function delete(guitar) {
+  //   let user = $cookies.getObject('user');
+  //   if(user.id === guitar.user)
+  //   return true };
+  //   else {
+  //     return false
+  //   };
+
+
+
 }
+  // function deleteGuitar (guitarId) {
+  //   $http.delete(SERVER.URL  + 'guitars/' + guitarId).then( (res) => {
+  //       $state.go('root.list')
+  //     });
+  // }
+
+// }
 
 GuitarService.$inject = ['$http', '$cookies','SERVER'];
 export { GuitarService };
