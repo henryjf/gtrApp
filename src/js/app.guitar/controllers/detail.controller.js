@@ -27,14 +27,6 @@ function DetailController($http, SERVER, $stateParams, $state, GuitarService, $c
     });
   }
 
-  // function deleteGuitar (guitarId) {
-  //   GuitarService.delete(guitarId).then( (res) => {
-  //
-  //     $state.go('root.list')
-  //
-  //   });
-  // }
-
   function deleteGuitar (guitarId) {
     // if user is logged in, show delete button, otherwise do not
     $http.delete(SERVER.URL  + 'guitars/' + guitarId).then( (res) => {

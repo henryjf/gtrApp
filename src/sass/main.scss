@@ -2,8 +2,9 @@
 
 
 .wrapper {
-  width: 800px;
+  width: 100%;
   margin: 25px auto;
+  background-color: #E9E2CB;
 
   .gtr_images {
     width: 200px;
@@ -11,16 +12,19 @@
 
 
 .list_images {
-  width: 50%;
+  width: 40%;
   margin-bottom: 15px;
 }
 
 .form-control {
   margin-bottom: 15px;
 }
-
+.detail_page {
+  margin: 5%;
+  
 .detail {
   width: 80%;
+}
 }
 }
 

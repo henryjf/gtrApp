@@ -24,27 +24,17 @@ function GuitarService($http, $cookies, SERVER) {
     guitar.user = user.id;
 
     return $http.post(url, guitar);
-  };
 
+    let wishList = [];
 
-  // function delete(guitar) {
-  //   let user = $cookies.getObject('user');
-  //   if(user.id === guitar.user)
-  //   return true };
-  //   else {
-  //     return false
-  //   };
-
-
+  guitars.forEach( function(guitar) {
+    if (guitar === wishList)
+    return wishList;
+    console.log(wishList);
+  });
+};
 
 }
-  // function deleteGuitar (guitarId) {
-  //   $http.delete(SERVER.URL  + 'guitars/' + guitarId).then( (res) => {
-  //       $state.go('root.list')
-  //     });
-  // }
-
-// }
 
 GuitarService.$inject = ['$http', '$cookies','SERVER'];
 export { GuitarService };

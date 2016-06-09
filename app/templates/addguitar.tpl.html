@@ -6,6 +6,11 @@
   <input type="text" class="form-control" ng-model="guitar.date" placeholder="Date">
   <input type="text" class="form-control" ng-model="guitar.finish" placeholder="Finish">
   <input type="text" class="form-control" ng-model="guitar.imageUrl" placeholder="Image url">
+  <!-- <input type="text" class="form-control" ng-model="guitar.status" placeholder="Status"> -->
+  <select class="selectbtn" ng-model="guitar.status">
+    <option value="wish_list">Wish List</option>
+    <option value="i_own">I Own</option>
+  </select>
 </div>
   <button>Add Guitar</button>
 

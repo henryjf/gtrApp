@@ -1,7 +1,7 @@
 function AddGuitarController(GuitarService, $state) {
 
   let vm = this;
-
+  vm.status = status;
   vm.addGuitar = addGuitar;
 
   function addGuitar (guitar) {
