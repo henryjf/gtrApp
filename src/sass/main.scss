@@ -3,12 +3,16 @@
 
 .wrapper {
   width: 100%;
-  margin: 25px auto;
+  // margin: 25px auto;
   background-color: #E9E2CB;
 
-
+  h3 {
+    color: white;
+  }
   .gtr_images {
     width: 200px;
+    border-radius: 35%;
+    margin: 5px;
   }
 
 .form-control {
@@ -35,8 +39,25 @@
   margin-left: 10%;
 }
 
+.content {
+  color: white;
 }
+header {
+  background-color: #1F4220;
 
-.heading {
-  margin: 5px 10px;
+  .heading  {
+    margin: 5px 10px;
+    color: white;
+  }
+
+    span {
+      color: white;
+  }
+
+}
+footer {
+  background-color: #1F4220;
+  color: white;
+
+}
 }

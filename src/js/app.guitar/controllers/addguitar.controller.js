@@ -5,6 +5,8 @@ function AddGuitarController(GuitarService, $state) {
   vm.addGuitar = addGuitar;
 
   function addGuitar (guitar) {
+
+    console.log(guitar);
     GuitarService.add(guitar).then( (res) => {
 
       $state.go('root.list')

@@ -1,19 +1,20 @@
 <h3>Detail Page</h3>
 <div class="detail_page">
 
-<div class="card is-fullwidth">
+  <div class="card is-fullwidth">
 
-    <img class="detail" ng-src="{{ vm.detailGuitar.imageUrl }}">
+      <img class="detail" ng-src="{{ vm.detailGuitar.imageUrl }}">
 
     <div class="card-content">
-    <div class="content">{{ vm.detailGuitar.make }}</div>
-    <div class="content">{{ vm.detailGuitar.model }}</div>
-    <div class="content">{{ vm.detailGuitar.date }}</div>
-    <div class="content">{{ vm.detailGuitar.finish }}</div>
-  </div>
+      <div class="content">{{ vm.detailGuitar.make }}</div>
+      <div class="content">{{ vm.detailGuitar.model }}</div>
+      <div class="content">{{ vm.detailGuitar.date }}</div>
+      <div class="content">{{ vm.detailGuitar.finish }}</div>
+      <div class="content">{{ vm.detailGuitar.status }}</div>
+    </div>
 
-  <footer class="card-footer">
-    <a class="card-footer-item" ng-click="vm.deleteGuitar(vm.detailGuitar.id)"><button ng-show="vm.showDeleteBtn">Delete</button></a>
-  </footer>
-</div>
+    <footer class="card-footer">
+      <a class="card-footer-item" ng-click="vm.deleteGuitar(vm.detailGuitar.id)"><button ng-show="vm.showDeleteBtn">Delete</button></a>
+    </footer>
+  </div>
 </div>
