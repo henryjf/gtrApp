@@ -6,10 +6,14 @@
   margin: 25px auto;
   background-color: #E9E2CB;
 
+
   .gtr_images {
     width: 200px;
   }
 
+.form-control {
+  width: 75%;
+}
 
 .list_images {
   width: 40%;
@@ -18,14 +22,19 @@
 
 .form-control {
   margin-bottom: 15px;
+  // margin-left: 10%
 }
 .detail_page {
   margin: 5%;
-  
+
 .detail {
   width: 80%;
 }
 }
+.form {
+  margin-left: 10%;
+}
+
 }
 
 .heading {

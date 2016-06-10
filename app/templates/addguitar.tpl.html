@@ -1,18 +1,19 @@
+<div class="form" id="addPage">
 <p>Add a guitar</p>
-<form ng-submit="vm.addGuitar(guitar)">
-  <div class="form-group">
-  <input type="text" class="form-control" ng-model="guitar.make" placeholder="Make">
-  <input type="text" class="form-control" ng-model="guitar.model" placeholder="Model">
-  <input type="text" class="form-control" ng-model="guitar.date" placeholder="Date">
-  <input type="text" class="form-control" ng-model="guitar.finish" placeholder="Finish">
-  <input type="text" class="form-control" ng-model="guitar.imageUrl" placeholder="Image url">
-  <!-- <input type="text" class="form-control" ng-model="guitar.status" placeholder="Status"> -->
-  <select class="selectbtn" ng-model="guitar.status">
-    <option value="wish_list">Wish List</option>
-    <option value="i_own">I Own</option>
-  </select>
+
+  <form ng-submit="vm.addGuitar(guitar)">
+      <div class="form-group">
+      <input type="text" class="form-control" ng-model="guitar.make" placeholder="Make">
+      <input type="text" class="form-control" ng-model="guitar.model" placeholder="Model">
+      <input type="text" class="form-control" ng-model="guitar.date" placeholder="Date">
+      <input type="text" class="form-control" ng-model="guitar.finish" placeholder="Finish">
+      <input type="text" class="form-control" ng-model="guitar.imageUrl" placeholder="Image url">
+      <!-- <input type="text" class="form-control" ng-model="guitar.status" placeholder="Status"> -->
+      <select class="selectbtn" ng-model="guitar.status">
+        <option value="wish_list">Wish List</option>
+        <option value="i_own">I Own</option>
+      </select>
+    </div>
+      <button>Add Guitar</button>
+  </form>
 </div>
-  <button>Add Guitar</button>
-
-
-</form>

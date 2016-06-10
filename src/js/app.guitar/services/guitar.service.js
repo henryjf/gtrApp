@@ -25,13 +25,7 @@ function GuitarService($http, $cookies, SERVER) {
 
     return $http.post(url, guitar);
 
-    let wishList = [];
-
-  guitars.forEach( function(guitar) {
-    if (guitar === wishList)
-    return wishList;
-    console.log(wishList);
-  });
+   
 };
 
 }
