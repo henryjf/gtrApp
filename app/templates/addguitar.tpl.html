@@ -1,17 +1,17 @@
 <div class="form" id="addPage">
-<h3>Add a guitar</h3>
 
   <form ng-submit="vm.addGuitar(guitar)">
       <div class="form-group">
+        <h3>Add a guitar</h3>
 
       <input type="text" class="form-control" ng-model="guitar.make" placeholder="Make">
       <input type="text" class="form-control" ng-model="guitar.model" placeholder="Model">
       <input type="text" class="form-control" ng-model="guitar.date" placeholder="Date">
       <input type="text" class="form-control" ng-model="guitar.finish" placeholder="Finish">
       <input type="text" class="form-control" ng-model="guitar.imageUrl" placeholder="Image url">
-      <select class="selectbtn" ng-model="guitar.status">
-        <option>Wish List</option>
-        <option>I Own</option>
+      <select name="dropdown" class="dropdown" ng-model="guitar.status">
+        <option value="Wish List" selected>Wish List</option>
+        <option value="I Own">I Own</option>
       </select>
 
     </div>

@@ -1,6 +1,7 @@
 @import "bootstrap";
 
 $margin-left: 10%;
+$color: white;
 
 .wrapper {
   width: 100%;
@@ -8,65 +9,65 @@ $margin-left: 10%;
   background-color: #E9E2CB;
 
 
-  header {
+    header {
+      background-color: #1F4220;
+      padding: 20px;
+
+      .heading  {
+        margin: 5px 10px;
+        color: $color;
+      }
+      span {
+        color: $color;
+      }
+    }
+
+    h2 {
+      color: $color;
+      margin-left: 5%;
+    }
+
+    h3 {
+      color: $color;
+    }
+
+    .gtr_images {
+      width: 200px;
+      border-radius: 50%;
+      margin: 5px;
+    }
+
+  .form-control {
+    width: 75%;
+    margin-bottom: 15px;
+  }
+
+  .list_images {
+    width: 40%;
+    margin-bottom: 15px;
+  }
+
+  .detail_page {
+    margin: 5%;
+
+    .detail {
+      width: 80%;
+      margin-left:$margin-left;
+    }
+  }
+
+  .form {
+    margin-left: $margin-left;
+  }
+
+  .content {
+    color: $color;
+  }
+
+  .footer {
+    text-align: center;
     background-color: #1F4220;
+    color: $color;
     padding: 20px;
-
-    .heading  {
-      margin: 5px 10px;
-      color: white;
-    }
-
-    span {
-      color: white;
-    }
   }
-
-  h3 {
-    color: white;
-    margin-left: 5%;
-  }
-  .gtr_images {
-    width: 200px;
-    border-radius: 50%;
-    margin: 5px;
-  }
-
-.form-control {
-  width: 75%;
-  margin-bottom: 15px;
-}
-
-.list_images {
-  width: 40%;
-  margin-bottom: 15px;
-}
-
-.form-control {
-  // margin-left: 10%
-}
-.detail_page {
-  margin: 5%;
-
-.detail {
-  width: 80%;
-  margin-left:$margin-left;
-}
-}
-.form-group {
-  margin-left: $margin-left;
-}
-button {
-  margin-left: $margin-left;
-}
-
-.content {
-  color: white;
-}
-.footer {
-  background-color: #1F4220;
-  color: white;
-  padding: 20px;
-
-}
 }
