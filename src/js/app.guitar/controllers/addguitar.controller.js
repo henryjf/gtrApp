@@ -10,7 +10,6 @@ function AddGuitarController(GuitarService, $state) {
     GuitarService.add(guitar).then( (res) => {
 
       $state.go('root.list')
-
     });
   }
 

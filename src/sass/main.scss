@@ -1,13 +1,30 @@
 @import "bootstrap";
 
+$margin-left: 10%;
 
 .wrapper {
   width: 100%;
   // margin: 25px auto;
   background-color: #E9E2CB;
 
+
+  header {
+    background-color: #1F4220;
+    padding: 20px;
+
+    .heading  {
+      margin: 5px 10px;
+      color: white;
+    }
+
+    span {
+      color: white;
+    }
+  }
+
   h3 {
     color: white;
+    margin-left: 5%;
   }
   .gtr_images {
     width: 200px;
@@ -17,6 +34,7 @@
 
 .form-control {
   width: 75%;
+  margin-bottom: 15px;
 }
 
 .list_images {
@@ -25,7 +43,6 @@
 }
 
 .form-control {
-  margin-bottom: 15px;
   // margin-left: 10%
 }
 .detail_page {
@@ -33,31 +50,23 @@
 
 .detail {
   width: 80%;
+  margin-left:$margin-left;
 }
 }
-.form {
-  margin-left: 10%;
+.form-group {
+  margin-left: $margin-left;
+}
+button {
+  margin-left: $margin-left;
 }
 
 .content {
   color: white;
 }
-header {
-  background-color: #1F4220;
-
-  .heading  {
-    margin: 5px 10px;
-    color: white;
-  }
-
-    span {
-      color: white;
-  }
-
-}
 .footer {
   background-color: #1F4220;
   color: white;
+  padding: 20px;
 
 }
 }
