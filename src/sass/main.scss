@@ -5,12 +5,10 @@ $color: white;
 
 .wrapper {
   width: 100%;
-  // margin: 25px auto;
-  background-color: #E9E2CB;
-
+  background-color: #F6F5EE;
 
     header {
-      background-color: #1F4220;
+      background-color: #585A6A;
       padding: 20px;
 
       .heading  {
@@ -23,12 +21,12 @@ $color: white;
     }
 
     h2 {
-      color: $color;
+      color: #41424E;
       margin-left: 5%;
     }
 
     h3 {
-      color: $color;
+      color: #41424E;
     }
 
     .gtr_images {
@@ -61,12 +59,13 @@ $color: white;
   }
 
   .content {
-    color: $color;
+    color: #41424E;
+    font-size: 18px;
   }
 
   .footer {
     text-align: center;
-    background-color: #1F4220;
+    background-color: #585A6A;
     color: $color;
     padding: 20px;
   }
