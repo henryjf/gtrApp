@@ -1,4 +1,4 @@
-<h2>My Guitar Room</h2>
+<!-- <h2>My Guitar Room</h2>
 
 <div class="container" ng-controller="ListController as vm">
 
@@ -6,4 +6,25 @@
 <img class="list_images" ng-src="{{guitar.imageUrl}}">
 </a>
 
-</div>
+</div> -->
+<h2>My Guitar Room</h2>
+
+<!-- <div class="container" ng-controller="ListController as vm"> -->
+
+<!-- <a href="/#/detail/{{guitar.id}}" ng-repeat="guitar in vm.allGuitars"> -->
+<!-- <img class="list_images" ng-src="{{guitar.imageUrl}}"> -->
+</a>
+
+  <div class="card-columns" ng-controller="ListController as vm">
+
+  <a href="/#/detail/{{guitar.id}}" ng-repeat="guitar in vm.allGuitars">
+
+    <div class="card">
+      <h4 class="card-title">Card title</h4>
+      <img class="list_images" ng-src="{{guitar.imageUrl}}">
+      <!-- <div class="card-block">
+        <p class="card-text">Wha' Happened?</p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div> -->
+    </div>
+  </div>

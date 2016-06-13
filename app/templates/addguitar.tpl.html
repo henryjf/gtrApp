@@ -1,4 +1,4 @@
-<div class="form" id="addPage">
+<!-- <div class="form" id="addPage">
 
   <form ng-submit="vm.addGuitar(guitar)">
       <div class="form-group">
@@ -12,6 +12,29 @@
       <select name="dropdown" class="dropdown" ng-model="guitar.status">
         <option value="">Please Select</option>
         <option value="Wish List" selected>Wish List</option>
+        <option value="I Own">I Own</option>
+      </select>
+
+    </div>
+      <button class="btn btn-primary">Add Guitar</button>
+  </form>
+</div> -->
+
+<div class="form" id="addPage">
+
+  <form ng-submit="vm.addGuitar(guitar)">
+      <div class="form-group">
+        <h3>Add a guitar</h3>
+
+      <input type="text" class="form-control" ng-model="guitar.make" placeholder="Make">
+      <input type="text" class="form-control" ng-model="guitar.model" placeholder="Model">
+      <input type="text" class="form-control" ng-model="guitar.date" placeholder="Date">
+      <input type="text" class="form-control" ng-model="guitar.finish" placeholder="Finish">
+      <input type="text" class="form-control" ng-model="guitar.imageUrl" placeholder="Image url">
+      <select class="dropdown" ng-model="guitar.status" ng-init="guitar.status==='Wish List'">
+        <option value="">Please Select</option>
+        <!-- <option value="Wish List">Wish List</option> -->
+        <option value="Wish List" ng-if="vm.selected">Wish List</option>
         <option value="I Own">I Own</option>
       </select>
 
