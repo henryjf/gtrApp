@@ -15,7 +15,7 @@ function GuitarService($http, $cookies, SERVER) {
   };
 
   function getAllGuitars () {
-    return $http.get(url);
+    return $http.get(url, { headers: SERVER.HEADERS });
     // console.log($http.get(url));
   };
 
