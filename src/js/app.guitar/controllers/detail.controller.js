@@ -17,12 +17,12 @@ function DetailController($http, SERVER, $stateParams, $state, GuitarService, $c
       // console.log($cookies);
 
       let loggedInUserId = $cookies.getObject('user').id;
-      console.log('logged in user:', loggedInUserId);
+      // console.log('logged in user:', loggedInUserId);
 
       let thisGuitarId   = vm.detailGuitar.user;
-      console.log('guitar user id:', thisGuitarId);
-      //
-      console.log('test if this is true:', loggedInUserId === thisGuitarId );
+      // console.log('guitar user id:', thisGuitarId);
+
+      // console.log('test if this is true:', loggedInUserId === thisGuitarId );
       vm.showDeleteBtn = (loggedInUserId === thisGuitarId);
     });
   }

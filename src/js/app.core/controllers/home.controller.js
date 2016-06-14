@@ -6,7 +6,7 @@ function HomeController(GuitarService) {
 
   function init() {
 
-      GuitarService.getAllGuitars().then( (res) => {
+    GuitarService.getAllGuitars().then( (res) => {
       vm.allGuitars = res.data.data;
     });
 
