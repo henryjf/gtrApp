@@ -2,8 +2,15 @@
 
 <div class="container" ng-controller="ListController as vm">
 
-<a href="/#/detail/{{guitar.id}}" ng-repeat="guitar in vm.allGuitars">
-<img class="list_images" ng-src="{{guitar.imageUrl}}">
-</a>
+
+  <div class="column" >
+    <!-- <div class="col-md-8"> -->
+      <a href="/#/detail/{{guitar.id}}" ng-repeat="guitar in vm.own">
+        <img class="list_images" ng-src="{{guitar.imageUrl}}">
+      </a>
+
+    </div>
+    <!-- <div class="col-md-6">.col-md-6</div> -->
+  <!-- </div> -->
 
 </div>

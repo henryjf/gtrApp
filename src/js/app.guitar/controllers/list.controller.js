@@ -2,6 +2,7 @@ function ListController (GuitarService, $cookies, $state) {
 
   let vm = this;
 
+
   init();
 
   function init() {
@@ -9,12 +10,22 @@ function ListController (GuitarService, $cookies, $state) {
       let userId = $cookies.get('userId');
 
       GuitarService.getMyGuitars(userId).then( (res) => {
-      vm.allGuitars = res.data.data;
-      // $state.go('root.detail')
+        vm.allGuitars = res.data.data;
 
-      // console.log(res.data.data);
-    });
+        vm.own = vm.allGuitars.filter(function(guitar){
+          return guitar.status === 'I Own';
+        });
+
+        vm.wishList =vm.allGuitars.filter(function(guitar) {
+          return guitar.status === 'Wish List';
+        })
+
+        // console.log(vm.own);
+        // console.log(vm.wishList);
+
+      });
   }
+
 
 }
 
