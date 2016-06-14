@@ -7,8 +7,8 @@ function UserService (Backand, $rootScope, $cookies, $state) {
   this.authChanged = authChanged;
 
   function checkAuth () {
-    let token =$cookies.get('token');
-    return token ? true : false;
+    let token =$cookies.get('user');
+    return user ? true : false;
   }
 
   function authChanged (stat) {
@@ -42,9 +42,13 @@ function UserService (Backand, $rootScope, $cookies, $state) {
     let user = $cookies.getObject('user');
     if (user) {
       console.log('user is logged in');
+      this.authChanged('authenticated');
     } else if (currentState === 'root.login' || currentState ==='root.register' || currentState ==='root.home') {
       console.log('already on a login/register page');
-    } else { $state.go('root.login');
+      this.authChanged('un-authenticated');
+    } else { 
+      this.authChanged('un-authenticated');
+      $state.go('root.login');
     }
   }
 
