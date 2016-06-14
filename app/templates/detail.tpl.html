@@ -5,16 +5,15 @@
 
       <img class="detail" ng-src="{{ vm.detailGuitar.imageUrl }}">
 
-    <div class="card-content">
-      <div class="content">Make:  {{ vm.detailGuitar.make }}</div>
-      <div class="content">Model:  {{ vm.detailGuitar.model }}</div>
-      <div class="content">Date:  {{ vm.detailGuitar.date }}</div>
-      <div class="content">Finish:  {{ vm.detailGuitar.finish }}</div>
-      <div class="content">Status:  {{ vm.detailGuitar.status }}</div>
-    </div>
+      <ul class="list-group">
+        <li class="list-group-item">Make:  {{ vm.detailGuitar.make }}</li>
+        <li class="list-group-item">Model:  {{ vm.detailGuitar.model }}</li>
+        <li class="list-group-item">Date:  {{ vm.detailGuitar.date }}</li>
+        <li class="list-group-item">Finish:  {{ vm.detailGuitar.finish }}</li>
+        <li class="list-group-item">Status:  {{ vm.detailGuitar.status }}</li>
 
-    <footer class="card-footer">
-      <a class="card-footer-item" ng-click="vm.deleteGuitar(vm.detailGuitar.id)"><button ng-show="vm.showDeleteBtn">Delete</button></a>
-    </footer>
+        <a class="card-footer-item" ng-click="vm.deleteGuitar(vm.detailGuitar.id)"><button class="btn" ng-show="vm.showDeleteBtn">Delete</button></a>
+      </ul>
+
   </div>
 </div>
