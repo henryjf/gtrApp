@@ -1,28 +1,10 @@
 <h2>The Guitar Closet</h2>
 
-  <!-- <div class="container" ng-controller="HomeController as vm">
-
-  <a href="/#/detail/{{guitar.id}}" ng-repeat="guitar in vm.allGuitars">
-  <img class="gtr_images" ng-src="{{guitar.imageUrl}}">
-  </a>
-  </div> -->
   <div class="card-columns">
-  <div class="card"  ng-controller="HomeController as vm">
-    <a href="/#/detail/{{guitar.id}}" ng-repeat="guitar in vm.allGuitars">
-    <img class="gtr_images" ng-src="{{guitar.imageUrl}}" alt="Card image cap">
-    </a>
-      <!-- <img class="card-img-top" data-src="..." alt="Card image cap"> -->
-      <!-- <div class="card-block">
-        <h4 class="card-title">Card title that wraps to a new line</h4>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div> -->
+    <div class="card"  ng-controller="HomeController as vm">
+      <a href="/#/detail/{{guitar.id}}" ng-repeat="guitar in vm.allGuitars">
+        <img class="gtr_images" ng-src="{{guitar.imageUrl}}" alt="Card image cap">
+      </a>
+
     </div>
-</div>
-
-
-<!-- <div class="card-columns" ng-controller="HomeController as vm">
-
-  <div class="card" ng-repeat="guitar in vm.allGuitars" style="background-image:url("{{ guitar.imageURL }}"); background-position: center">
-
   </div>
-</div> -->
