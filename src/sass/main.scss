@@ -6,6 +6,7 @@ $color: white;
 .wrapper {
   width: 100%;
   background-color: #F6F5EE;
+  position: relative;
 
     header {
       background-color: #585A6A;
@@ -30,6 +31,15 @@ $color: white;
       padding-left: 20px;
     }
 
+    .gtr_images{
+      width: 42%;
+      // height: 180px;
+      // width: 250px;
+      // height: 150px;
+      background-size: 200px;
+      margin: 5px;
+    }
+
     h2 {
       color: #41424E;
       margin-left: $margin-left;
@@ -38,17 +48,6 @@ $color: white;
     h3 {
       color: #41424E;
     }
-    .card-img-top{
-      width: 42%;
-      // height: 180px;
-      margin: 5px;
-
-    }
-    // .gtr_images {
-    //   width: 200px;
-    //   border-radius: 50%;
-    //   margin: 5px;
-    // }
 
   .form-control {
     width: 75%;
