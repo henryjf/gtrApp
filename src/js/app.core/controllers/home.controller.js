@@ -1,4 +1,4 @@
-function HomeController(GuitarService, UserService, $cookies) {
+function HomeController(GuitarService, $cookies) {
 
   let vm = this;
 
@@ -18,7 +18,7 @@ function HomeController(GuitarService, UserService, $cookies) {
         // out any that match user with the user id
         // 4. Set `vm.allGuitars` to the result of the filter
         vm.allGuitars = res.data.data.filter( function (guitar) {
-          // test that guitar's user does NOT match our loged in ID
+          // test that guitar's user does NOT match our logged in ID
           return guitar.user !== userId;
         });
 
@@ -32,5 +32,5 @@ function HomeController(GuitarService, UserService, $cookies) {
   }
 }
 
-HomeController.$inject = ['GuitarService','UserService', '$cookies'];
+HomeController.$inject = ['GuitarService','$cookies'];
 export { HomeController };

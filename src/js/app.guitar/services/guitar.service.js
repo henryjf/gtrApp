@@ -11,7 +11,6 @@ function GuitarService($http, $cookies, SERVER) {
     let myURL = SERVER.URL + 'users/' + user.id + '/guitars';
 
     return $http.get(myURL);
-    // console.log($http);
   };
 
   function getAllGuitars () {

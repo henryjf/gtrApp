@@ -13,8 +13,6 @@ function DetailController($http, SERVER, $stateParams, $state, GuitarService, $c
       vm.detailGuitar = res.data;
 
       // goal: compare user id for logged in user to the user id for this guitar
-      // console.log($cookies);
-
       let loggedInUserId = $cookies.getObject('user').id;
       // console.log('logged in user:', loggedInUserId);
 
