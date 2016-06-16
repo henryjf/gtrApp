@@ -4,7 +4,6 @@ function DetailController($http, SERVER, $stateParams, $state, GuitarService, $c
   vm.deleteGuitar = deleteGuitar;
 
 
-
   init();
 
   function init() {

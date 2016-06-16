@@ -11,11 +11,11 @@ function GuitarService($http, $cookies, SERVER) {
     let myURL = SERVER.URL + 'users/' + user.id + '/guitars';
 
     return $http.get(myURL);
-    console.log($http);
+    // console.log($http);
   };
 
   function getAllGuitars () {
-    return $http.get(url, { headers: SERVER.HEADERS });
+    return $http.get(url + '?pageSize=50', { headers: SERVER.HEADERS });
   };
 
   function add(guitar) {
