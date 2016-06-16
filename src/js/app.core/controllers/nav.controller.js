@@ -1,5 +1,4 @@
 
-//passing in userservice so we have access to login information
 function NavController ($rootScope, UserService) {
 
   let vm = this;

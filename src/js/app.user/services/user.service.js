@@ -41,12 +41,12 @@ function UserService (Backand, $rootScope, $cookies, $state) {
   function checkAuth(currentState){
     let user = $cookies.getObject('user');
     if (user) {
-      console.log('user is logged in');
+      // console.log('user is logged in');
       this.authChanged('authenticated');
     } else if (currentState === 'root.login' || currentState ==='root.register' || currentState ==='root.home') {
-      console.log('already on a login/register page');
+      // console.log('already on a login/register page');
       this.authChanged('un-authenticated');
-    } else { 
+    } else {
       this.authChanged('un-authenticated');
       $state.go('root.login');
     }

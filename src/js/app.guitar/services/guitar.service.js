@@ -16,9 +16,7 @@ function GuitarService($http, $cookies, SERVER) {
 
   function getAllGuitars () {
     return $http.get(url, { headers: SERVER.HEADERS });
-    // console.log($http.get(url));
   };
-
 
   function add(guitar) {
     let user = $cookies.getObject('user');
@@ -26,8 +24,7 @@ function GuitarService($http, $cookies, SERVER) {
 
     return $http.post(url, guitar);
 
-
-};
+  };
 
 }
 
