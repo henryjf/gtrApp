@@ -1,11 +1,7 @@
-# Project Description
+Welcome to the Guitar Closet.  This is an app where users can post images and specs
+about their current collection as well as post a wish list of guitars.  My hope is to create
+community where users will be able to get together and share their love of the instrument with
+other members.  
 
-This is a basic template for starting projects.
 
-## Deployment
-
-To deploy your project just run:
-
-- Make sure you have a lowercase folder name
-- `npm run deploy`
-- You should have a 'surge.sh' link now for your project
+tiy-maryhenry-gtrapp.surge.sh
